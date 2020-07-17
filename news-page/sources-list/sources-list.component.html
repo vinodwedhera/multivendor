@@ -1,0 +1,36 @@
+<div class="hide-scroll">
+  <nav class="sources-list">
+    <app-source-item
+      *ngFor="let source of sourcesList; let id = index;"
+      [id]="id"
+      [sourceData]="source"
+      (setSource)="setSource($event);"
+    ></app-source-item>
+  </nav>
+</div>
+<nav class="sources-list menu-static first-list">
+  <button  _ngcontent-c5 class="source__item"> <span class="source__item-name"> All </span></button>
+   <button  _ngcontent-c5 class="source__item"> <span class="source__item-name"> Sydney </span></button>
+   <button  _ngcontent-c5 class="source__item"> <span class="source__item-name">Melbourne </span> </button>
+   <button  _ngcontent-c5 class="source__item"><span class="source__item-name"> Brisbane</span> </button>
+   <button  _ngcontent-c5 class="source__item"><span class="source__item-name">Perth </span></button>
+   <button _ngcontent-c5  class="source__item"><span class="source__item-name">Queensland </span></button>
+   <button _ngcontent-c5  class="source__item"><span class="source__item-name">Western Australia	</span> </button>
+</nav>
+<nav class="sources-list menu-static pt-0">
+  <button  _ngcontent-c5 class="source__item"> <span class="source__item-name"> All </span></button>
+  <button  _ngcontent-c5 class="source__item"> <span class="source__item-name"> Sports </span></button>
+  <button  _ngcontent-c5 class="source__item"> <span class="source__item-name">Technology </span> </button>
+  <button  _ngcontent-c5 class="source__item"><span class="source__item-name"> Weather</span> </button>
+  <button  _ngcontent-c5 class="source__item"><span class="source__item-name">Weblogs </span></button>
+  <button _ngcontent-c5  class="source__item"><span class="source__item-name">Current Events
+
+  </span></button>
+  <button _ngcontent-c5  class="source__item"><span class="source__item-name">Politics	</span> </button>
+  <button _ngcontent-c5  class="source__item"><span class="source__item-name">Automotive	</span> </button>
+  <button _ngcontent-c5  class="source__item"><span class="source__item-name">E-Commerce
+	</span> </button>
+  <button _ngcontent-c5  class="source__item"><span class="source__item-name">Internet Services
+
+	</span> </button>
+</nav>

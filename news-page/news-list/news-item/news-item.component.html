@@ -1,0 +1,16 @@
+
+<div class="news__item">
+  <div class="news__meta">
+    <div class="news-thumb" [ngStyle]="newsItemStyles"></div>
+    <ul class="news__meta-details">
+      <li class="news__meta-date">{{articleData.publishedAt | date}}</li>
+    </ul>
+  </div>
+  <div  class="news__description">
+    <a (click)="redirectToArticle()">
+      <h2 title="{{articleData.title}}" class="news__description-title">{{articleData.title}}</h2>
+      <!-- <p class="news__description-description">{{articleData.description || ''}}</p> -->
+    </a>
+  </div>
+</div>
+

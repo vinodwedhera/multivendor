@@ -1,0 +1,3 @@
+<button [class.active]="isActive" class="source__item" (click)="selectSource()">
+  <span class="source__item-name" (click)="isActive = !isActive;">{{sourceData.name}}</span>
+</button>

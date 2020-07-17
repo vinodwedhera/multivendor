@@ -1,0 +1,18 @@
+<!-- <app-header></app-header> -->
+<app-navigation
+    [setShowLocal]="setShowLocal"
+    [setFilterValue]="setFilterValue"
+    [isAuthorised]="isAuthorised">
+</app-navigation>
+<app-sources-list
+    [sourcesList]="sourcesList"
+    [setSource]="setSource">
+</app-sources-list>
+<section class="bg-news">
+<app-news-list
+    [articlesList]="articlesList | filterByTitle: filterValue | filterByMine: showLocal"
+    [newsOnPage]="newsOnPage"
+    [showMore]="showMore"
+    [deleteArticle]="deleteArticle">
+</app-news-list>
+</section>

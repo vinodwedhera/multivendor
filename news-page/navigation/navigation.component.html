@@ -1,0 +1,36 @@
+<header class=header-news>
+  <nav class="navbar navbar-expand-lg w-100">
+    <a class="navbar-brand logo" href="../"> <img src="assets/img/logo.svg" width="100%"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainsitemenu" aria-controls="mainsitemenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="mainsitemenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex" href="#"><img src="assets/img/trending.svg" width="100%"> Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Social Media</a>
+        </li>
+     </ul>
+     
+</div>
+  <div class="filter">
+    <form id="filterForm" class="header-search" [formGroup]="filterForm" novalidate (ngSubmit)="onFilterSubmit()">
+      <fieldset>
+        <input 
+          type="text"
+          placeholder="Search for a keyword"
+          id="filterValue"
+          class="form-control header-search-form"
+          name="filterValue"
+          formControlName="filterValue"/>
+          <button type="submit" class="button"><img src="assets/img/search.svg" width="100%"></button>
+      </fieldset> 
+    </form>   
+  </div>
+</nav>
+</header>
+
+<div *ngIf="titleBlockValue" class="sub-header">{{titleBlockValue}}</div>

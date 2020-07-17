@@ -1,0 +1,34 @@
+.source__item {
+  background: none;
+  border: 1px solid #E1E1E1;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  color: #666666;
+  transition: 0.25s;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover {
+    background: rgb(236,68,214);
+    background: linear-gradient(99deg, rgba(207,42,71,1) 0%, rgba(242,114,225,1) 100%);
+    color: #ffffff;
+    transform: translateY(-0.25em);
+    border-color:transparent;
+  }
+
+  &:focus {
+    background: rgb(236,68,214);
+    background:linear-gradient(99deg, rgba(207,42,71,1) 0%, rgba(242,114,225,1) 100%);
+    color: #ffffff;
+    border-color:transparent;
+  }
+
+  .source-name {
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}

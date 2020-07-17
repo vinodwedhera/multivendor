@@ -1,0 +1,13 @@
+<div class="container-fluid">
+<div class="row">
+<div class="article-wrapper col-md-3" *ngFor="let article of articlesList; let count = index;">
+    <app-news-item
+        [articleData]="article"
+        [deleteArticle]="deleteArticle"
+        *ngIf="count < newsOnPage">
+    </app-news-item>
+</div></div>
+</div>
+<button class="load-more-btn" (click)="showMore($event);" *ngIf="newsOnPage < articlesList.length">Load More</button>
+
+<h1 class="no-data" *ngIf="!articlesList.length">There are no articles matching your request.<h1>
